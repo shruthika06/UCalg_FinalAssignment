@@ -1,0 +1,210 @@
+.l-heading {
+    font-size: 2.5rem;
+}
+
+.lead {
+    font-size: 1rem;
+  }
+
+
+/* About Us */
+#home-about {
+    margin: 2rem;
+}
+
+#home-about .about-container {
+display: block;
+}
+
+#home-about .about-image {
+    display: none;
+}
+
+#home-about .about-content {
+    padding: 0rem 2rem;
+}
+
+/* Cover image for menu */
+
+.cover-image {
+    height: 30vh;
+}
+.cover-image h3 {
+    display: none;
+}
+
+.head-font {
+    color: white;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 4px;
+  } 
+
+  .btn-main {
+    font-size: 16px;
+    padding: 4px;
+    
+  } 
+
+  .btn-light {
+    font-size: 16px;
+    padding: 4px;
+
+  } 
+
+/* Our Menu */
+#menu {
+    margin: 2rem;
+    padding: 0;
+}
+
+#menu .menu-item-container {
+    display: inline;
+    align-items: center;
+    padding: 0;
+}
+
+#menu .menu-item-container .menu-item {
+    padding: 10px 0;
+}
+
+#menu .menu-item-container .menu-item p {
+    display: none;
+}
+
+#menu .menu-item-container .menu-item .p-1 h3,
+#menu .menu-item-container .menu-item .p-1 h2 {
+    font-size: 1rem;
+}
+
+
+
+  /* Events */
+
+  #event .event-content {
+    height: 50vh;
+  }
+
+  #event .event-content .event-text {
+      width: 100%;
+  }
+
+
+  #event .event-content .event-text h3 {
+    padding-bottom: 10px;
+}
+  #event .event-content .event-text p {
+      display: none;
+  }
+
+  
+  /* Online Reservation */
+
+  #reserve .reserve-form {
+    padding: 1rem;
+    
+  }
+
+  #reserve .reserve-form p {
+      display: none;
+  }
+  #reserve .reserve-form .grid-form-container {
+    display: block;
+  }
+
+ #reserve .reserve-form .form-group {
+    width: 90%;
+ }
+
+ #reserve .btn-form {
+    padding-left: 0px;
+} 
+
+
+ /* Testimonials */
+
+  #testimonials .testimonial-main {
+      padding: 1rem;
+  }
+  
+
+/* Footer */
+#main-footer {
+    padding: 1rem;
+}
+
+#main-footer .footer-container {
+    display: block;
+}
+
+#main-footer .footer-container .footer-about {
+    display: none;
+}
+
+#main-footer .footer-container div {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #f0f0f0;
+    text-align: center;
+}
+
+#main-footer .footer-container div:nth-child(4) {
+    border-bottom: none;
+}
+
+#main-footer .footer-container div:last-child {
+    border: none;
+}
+
+
+
+/* *********************  Gallery  ************************** */
+
+/* Gallery Showcase */
+
+#gallery-showcase .gallery-container {
+    height: 30vh;
+}
+
+#gallery-showcase .gallery-head {
+    z-index: 1;
+   
+}
+
+#gallery-showcase .gallery-head p {
+    margin-bottom: 1rem;
+}
+
+/* Gallery Content */
+#gallery-content {
+    padding: 1rem;
+}
+.grid-item {
+    padding: 1rem;
+}
+
+#gallery-content .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+}
+
+
+/* *********************  Contact Us  ************************** */
+/* Contact Showcase */
+
+#contact-showcase .contact-content {
+    z-index: 1;
+}
+
+#contact-showcase .contact-content p {
+    margin-bottom: 1rem;
+}
+
+/* Contact Form */
+
+#contact-form {
+    margin-top: 2rem;
+    padding: 1rem;
+}

@@ -1,0 +1,609 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+/* Global Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+    background: white;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+h1, h2 {
+    line-height: 1.2;
+}
+
+p, b {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background: #f5a637;
+    border: 0;
+    margin: 25px auto 25px auto;
+}
+
+
+/* Uitlity Classes */
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.logo {
+    font-family: 'Zilla Slab', serif;
+}
+
+.l-heading {
+    font-size: 4.5rem;
+    line-height:1.2;
+    font-family: 'Zilla Slab', serif;
+}
+
+.head-font {
+    color: #f5a637;
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-1 { padding-right: 1rem; }
+
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    background: none;
+    padding: 13px 20px;
+    border: 1px solid #f5a637;
+    cursor: pointer;
+} 
+
+.btn-main {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #f5a637;
+    padding: 13px 20px;
+    border: 1px solid #f5a637;
+    cursor: pointer;
+} 
+
+.btn-light {
+    display: inline-block;
+    font-size: 16px;
+    background: #f5a637;
+    color: #444;
+    padding: 13px 20px;
+    border: 1px solid #f5a637;
+    cursor: pointer;
+} 
+
+.head-font {
+    color: #f5a637;
+}
+
+/* NavBar */
+#navbar {
+    display: flex;
+    position: sticky;
+    top:0;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 1rem;
+    background: black;
+    opacity: 0.8;
+}
+  
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+  
+#navbar ul li a {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+  
+#navbar ul li a:hover, #navbar ul li a:active {
+    color: #f5a637;
+}
+
+#navbar ul li a.current {
+    border-bottom: 1px solid #f5a637;
+}
+
+#navbar ul li a:active {
+    color: #444;
+}
+
+
+/* Showcase */
+
+#showcase {
+    color: #fff;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+#showcase:before {
+    content: '';
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+#showcase .showcase-content {
+    z-index: 1;
+}
+
+#showcase .showcase-content p {
+    margin-bottom: 2rem;
+}
+
+
+/* About Us */
+
+#home-about {
+    margin: 2rem;
+}
+
+#home-about .about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+#home-about .about-image {
+    padding: 2rem;
+}
+
+#home-about .about-content {
+    padding: 2rem;
+}
+
+
+/* Cover image for menu */
+
+.cover-image {
+    background: linear-gradient(#fff,hsla(0,0%,100%,0.1) 90%,transparent), linear-gradient(to bottom right,#fff 0,#fff 15%,transparent 30%,transparent), url('../img/about.jpg') no-repeat center center/cover;
+    height: 70vh;
+    margin: 2rem 0;
+}
+
+.cover-image h3 {
+    padding: 10rem 2rem 2rem 2rem;
+    margin-left: 5rem;
+    float: right;
+    width: 30%;
+}
+
+.clearfix::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+
+/* Our Menu */
+
+#menu {
+    margin: 2rem ;
+}
+
+#menu .menu-item-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0rem 4rem;
+    padding: 0 4rem;
+}
+
+#menu .menu-item-container .menu-item {
+   display: flex;
+   justify-content: space-between;
+   padding: 2rem;
+}
+
+#menu .menu-item-container .menu-item img {
+    width: 100px;
+    height: 100px;
+}
+
+#menu .menu-item {
+    border-bottom: 1px dotted rgb(218, 216, 216);
+}
+
+
+/* Events */
+
+#event {
+    padding-top: 2rem;
+}
+
+#event .event-content {
+    height: 70vh;
+    padding-left: 0;
+    padding-right: 0;
+    background: url('../img/event1.jpg') no-repeat center center/cover;
+}
+
+#event .event-content .event-text {
+    color: white;
+    padding: 4rem;
+    width: 50%;
+     
+}
+
+#event .event-content .event-text p, #event .event-content .event-text b {
+    padding-bottom: 2rem;
+}
+
+
+/* Online Reservation */
+
+#reserve {
+    padding: 2rem 0;
+    
+}
+
+#reserve .reserve-form {
+    padding: 0 10rem;
+    
+}
+
+#reserve .reserve-form p {
+    text-align: center;
+}
+
+#reserve .reserve-form .grid-form-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem; 
+}
+
+#reserve .reserve-form .form-group {
+    margin: 1rem;
+    width: 100%;
+}
+
+#reserve .reserve-form input, #reserve .reserve-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#reserve .reserve-form input:focus, 
+#reserve .reserve-form select:focus {
+    outline: none;
+    border-color: #f5a637;
+}
+
+#reserve .reserve-form #fname,
+#reserve .reserve-form #phone,
+#reserve .reserve-form #email,
+#reserve .reserve-form #people,
+#reserve .reserve-form #time,
+#reserve .reserve-form #date {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+#reserve .btn-form {
+    margin: 20px auto 20px auto;
+    text-align: center;
+    padding-left: 30px;
+} 
+
+#reserve .btn {
+    width: 20%;
+    height: 40px;
+}
+
+
+ /* Testimonials */
+
+#testimonials {
+    height: 100%;
+    padding-top: 80px;
+    background: #f0f0f0;
+}
+
+#testimonials .testimonial-main {
+    padding: 2rem 10rem;
+}
+  
+#testimonials .testimonial {
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.8;
+    color: black;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#testimonials .testimonial img {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+  
+#testimonials .testimonial q {
+    width: 100%;
+}
+
+
+/* Footer */
+
+#main-footer {
+    background: black;
+    color: #fff;
+    padding: 4rem;
+    opacity: 0.9;
+}
+
+
+#main-footer a {
+    color: #fff;
+}
+
+#main-footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+}
+
+#main-footer .footer-container > *:last-child {
+   background: rgb(20, 20, 20);
+    grid-column: 1 / span 4;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type='email'] {
+    width: 90%;
+    padding:0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type='submit'] {
+    width: 90%;
+    height: 40px;
+    background: #f5a637;
+    color: rgb(37, 35, 35);
+    border: none;
+}
+
+/* *********************  Gallery  ************************** */
+
+/* Gallery Showcase */
+#gallery-showcase {
+    color: #fff;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+#gallery-showcase:before {
+    content: '';
+    background: url('../img/gallery-showcase1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#gallery-showcase .gallery-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#gallery-showcase .gallery-head {
+    z-index: 1;
+}
+
+#gallery-showcase .gallery-head p {
+    margin-bottom: 1rem;
+}
+
+/* Gallery Content */
+
+#gallery-content {
+    padding: 4rem;
+}
+
+.grid-item {
+    padding: 2rem;
+}
+
+#gallery-content .gallery-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+#gallery-content .gallery-column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 1vw;
+}
+
+#gallery-content .gallery-column img {
+    margin-top: 2vw;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* *********************  Contact Us  ************************** */
+
+/* Contact Showcase */
+
+#contact-showcase {
+    color: #fff;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+#contact-showcase:before {
+    content: '';
+    background: url('../img/Contact1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#contact-showcase .contact-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#contact-showcase .contact-content {
+    z-index: 1;
+}
+
+#contact-showcase .contact-content p {
+    margin-bottom: 1rem;
+}
+
+/* Contact Form */
+
+#contact-form {
+    padding: 5rem 10rem;
+}
+
+#contact-form .form-group {
+    margin: 20px 0;
+}
+  
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+  
+#contact-form textarea {
+    height: 200px;
+}
+  
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f5a637;
+}
+
+#contact-form .btn {
+    width: 20%;
+    height: 40px;
+}
+
+
+/****************** Widescreen *****************/
+
+@media only screen and (min-width:1201px) {
+    
+/* Events */
+#event .event-content {
+    height: 100%;
+    }
+} 
+
+
+/***************** Landscape *******************/
+
+@media only screen and (max-height: 500px) {
+
+ /* Cover image for menu */
+ .cover-image {
+    height: 80vh;
+}
+
+/* Our Menu */
+#menu .menu-item-container .menu-item p {
+    display: none;
+}
+
+/* Events */
+#event .event-content {
+    height: 100%;
+}
+
+/* Online Reservations */
+#reserve .reserve-form {
+    padding: 0 7rem;
+    
+}
+} 
