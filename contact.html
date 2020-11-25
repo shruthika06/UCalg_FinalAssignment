@@ -38,7 +38,7 @@
       <h2 class="text-center">Get in Touch with Us</h2>
       <hr>
       <p class="text-center">Please fill out the form below to contact us</p>
-      <form action="process.php">
+      <form name="contact" method="POST" data-netlify="true">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" name="name" id="name">
@@ -66,7 +66,7 @@
         <div>
             <h3 class="head-font">Email Newsletter</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, illo.</p>
-            <form>
+            <form name="contact" method="POST" data-netlify="true">
                 <input type="email" placeholder="Enter Email ID">
                 <input type="submit" value="Subscribe" class="btn btn-primary">
             </form>
